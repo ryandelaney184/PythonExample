@@ -19,8 +19,8 @@ class PersonBuilder:
     # desired age need to be greater than or equal to
     # 1 years of age.
     def setAge(self, age):
-        if (age < 1):
-            error = "Age must be greater than 1 years old"
+        if (age <= 1):
+            error = "Age must be greater than or equal to 1 years old"
             raise ValueError(error)
 
         self.age = age
